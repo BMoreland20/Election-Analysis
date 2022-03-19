@@ -16,16 +16,30 @@ election_save = 'c:\\Users\\Blaine\\Documents\\College\\Bootcamp\\Election_Analy
 #Initialize a total vote counter.
 total_votes = 0
 
+#Candidate options.
+candidate_options = []
+
 # Open the election results and read the file.
 with open(election_file) as election_data:
-     election_reader = csv.reader(election_data)
+    election_reader = csv.reader(election_data)
+
 #Read the header row.
-     headers = next(election_reader)
-     print(headers)
+    headers = next(election_reader)
+
 #Print each row in the CSV file.
-     for row in election_reader:
-          total_votes += 1
-     print(total_votes)
+    for row in election_reader:
+        total_votes += 1
+
+# Print the candidate name from each row.
+        candidate_name = row[2]
+
+# Add the candidate name to the candidate list if not already added.
+        if candidate_name not in candidate_options:
+#Add to list of candidates
+            candidate_options.append(candidate_name)
+
+#Print candidate list
+print(candidate_options)
 
 
 # Create a filename variable to a direct or indirect path to the file.
