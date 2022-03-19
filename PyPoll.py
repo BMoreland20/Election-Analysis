@@ -19,6 +19,9 @@ total_votes = 0
 #Candidate options.
 candidate_options = []
 
+#Candidate votes.
+candidate_votes = {}
+
 # Open the election results and read the file.
 with open(election_file) as election_data:
     election_reader = csv.reader(election_data)
@@ -29,7 +32,7 @@ with open(election_file) as election_data:
 #Print each row in the CSV file.
     for row in election_reader:
         total_votes += 1
-
+        
 # Print the candidate name from each row.
         candidate_name = row[2]
 
@@ -37,13 +40,17 @@ with open(election_file) as election_data:
         if candidate_name not in candidate_options:
 #Add to list of candidates
             candidate_options.append(candidate_name)
+#Begin tracking candidate vote count
+            candidate_votes[candidate_name] = 0
+#Add vote to candidate's count
+        candidate_votes[candidate_name] += 1
 
 #Print candidate list
-print(candidate_options)
+print(candidate_votes)
 
 
 # Create a filename variable to a direct or indirect path to the file.
-with open(election_save, "w") as txt_file:
+#with open(election_save, "w") as txt_file:
 
     # Write some data to the file.
-    txt_file.write("Hello World")
+    #txt_file.write("Hello World")
