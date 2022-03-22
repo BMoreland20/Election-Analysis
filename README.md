@@ -19,14 +19,14 @@ The python code that we have developed can help automate all electronic ballotin
 
 By simply updating the code line ‘file_to_load = os.path.join("Resources", "election_results.csv")’ to show ‘file_to_load = os.path.join("Any file location", "any_election_source_data.csv")’ and ‘file_to_save = os.path.join("analysis", "election_analysis.txt")’ to ‘file_to_save = os.path.join("Any file location", "any_output.txt")’ you will be able to run this analytical program on any election in the future and collect the same descriptive data.
 	One additional point of code addition would be to include Bedford’s law to perform statistical analysis of the election data to check for potential anomalies in vote counts.  Here is a brief summary/example of the code that would need to be implemented to do this: first we need to import all of our data sources and set up our dependent libraries
-‘#import libraries
+`#import libraries
 import numpy as np
 import pandas as pd
 import sys
 import math
-import matplotlib.pyplot as plt’
+import matplotlib.pyplot as plt`
 
-‘def load_data(filename,var):
+`def load_data(filename,var):
         df=pd.read_excel(filename)
         data=df[var]
         return df,data
@@ -34,14 +34,14 @@ import matplotlib.pyplot as plt’
 data.describe()
 df.info()
 df.describe().transpose
-df.isnull().sum()’
+df.isnull().sum()`
 
 Next is to set up the code to look through the data and perform the statistical calculations.
 A sample of this code is as follows:
-‘chi_square_stat = 0  # chi square test statistic
+`chi_square_stat = 0  # chi square test statistic
     for data, expected in zip(data_count,expected_counts):
         chi_square = math.pow(data - expected, 2)
-        chi_square_stat += chi_square / expected’
+        chi_square_stat += chi_square / expected`
 This code was sourced from [Towards Data Science]( https://towardsdatascience.com/frawd-detection-using-benfords-law-python-code-9db8db474cf8) and the remainder of the code can be found here as well.
 
 After applying these changes to our code this script will be able to pull descriptive readouts on voter totals as well as check for potential irregularities at the same time.  Resulting in an overall time savings for all.
