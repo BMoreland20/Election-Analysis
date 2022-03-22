@@ -43,6 +43,5 @@ A sample of this code is as follows:
     for data, expected in zip(data_count,expected_counts):
         chi_square = math.pow(data - expected, 2)
         chi_square_stat += chi_square / expected`
-This code was sourced from [Towards Data Science]( https://towardsdatascience.com/frawd-detection-using-benfords-law-python-code-9db8db474cf8) and the remainder of the code can be found here as well.
 
-After applying these changes to our code this script will be able to pull descriptive readouts on voter totals as well as check for potential irregularities at the same time.  Resulting in an overall time savings for all.
+This code was sourced from [Towards Data Science]( https://towardsdatascience.com/frawd-detection-using-benfords-law-python-code-9db8db474cf8) and the remainder of the code can be found here as well.  After applying these changes to our code this script will be able to pull descriptive readouts on voter totals as well as check for potential irregularities at the same time.  This will result in an overall time savings for all and make auditing any election easier.
