@@ -5,7 +5,9 @@ Election-Audit Results:
 
 •	The total votes for this congressional election were 369,711.
 
-•	Jefferson county casted 38,855 votes which made up 10.5% of the vote. Denver casted 306,055 votes which made up 82.8% of the vote.  Lastly Arapahoe casted 24,801 votes which made up 6.7% of the vote. ![This is an image]( https://github.com/BMoreland20/Election-Analysis/blob/main/Resources/County_Vote_Breakdown.png)
+•	Jefferson county casted 38,855 votes which made up 10.5% of the vote. Denver casted 306,055 votes which made up 82.8% of the vote.  Lastly Arapahoe casted 24,801 votes which made up 6.7% of the vote.
+![This is an image]( https://github.com/BMoreland20/Election-Analysis/blob/main/Resources/County_Vote_Breakdown.png)
+
 
 •	Of the three counties Denver had the largest turnout with 369,711 votes cast. ![This is an image]( https://github.com/BMoreland20/Election-Analysis/blob/main/Resources/Largest_Turnout_County.png)
 
