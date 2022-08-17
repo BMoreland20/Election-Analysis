@@ -10,8 +10,8 @@ import csv
 import os
 
 # Assign a variable for the file to load and the path.
-election_file = 'c:\\Users\\Blaine\\Documents\\College\\Bootcamp\\Election_Analysis\\Resources\\election_results.csv'
-election_save = 'c:\\Users\\Blaine\\Documents\\College\\Bootcamp\\Election_Analysis\\Resources\\election_results.txt'
+election_file = 'c:\\Users\\Blaine\\Documents\\College\\Bootcamp\\3) Election_Analysis\\Resources\\election_results.csv'
+election_save = 'c:\\Users\\Blaine\\Documents\\College\\Bootcamp\\3) Election_Analysis\\Resources\\election_results.txt'
 
 #Initialize a total vote counter.
 total_votes = 0
